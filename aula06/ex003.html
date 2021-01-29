@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-color: #31316b;
+            /* comentario em CSS */
+            color: white;
+            font: normal 18pt Arial;
+        }
+        
+        h1 {
+            color: #ff00ea;
+            font: 700 30pt Cambria;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Olá, Mundo!</h1>
+    <!-- comentario em HTML -->
+    <h2>Tudo bem?</h2>
+    <p>Já me livrei da maldição</p>
+    <script>
+        var n1 = Number.parseInt(window.prompt('Digite um numero inteiro: ')) //prompt retorna string
+        var n2 = Number(window.prompt('Digite outro numero qualquer: '))
+            //Number.parseInt(n) convert para numero inteiro
+            //Number.parseFlot(n) convert para numero flutuante
+            //Number(n) converte para um numero, seja inteiro ou flutuate
+        var s = String(n1 + n2)
+            /* String() converte o número para string
+               n.toString converte o número para string */
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+        var t = 'JavaScript'
+        window.alert(`A quantidade de letras de ${t} é ${t.length}`)
+        window.alert(t.toUpperCase())
+    </script>
+</body>
+
+</html>

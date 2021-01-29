@@ -1,0 +1,23 @@
+Exercício - aula 016
+pasta ex18
+  analisor_ex018.html
+  estilo.css
+  script_ex018.js
+
+Descrição:
+Ação: Adicionar
+Numeros entre 1 e 100 
+Cadastrar numero a numero
+Mostrar o numero adicionado na tela a cada passo.
+Numero adicionado não pode ser repetido, se ocorrer mostrar na tela em popup qué é inválida a adição.
+O numero adicionado deve estar entre 1 e 100, inclusive o nuero 1 e 100.
+A caixa não pode estar vazia.
+Após finalizar deve continuar a receber até esgotar todos os cadastros.
+
+Tarefas eRelatório de saida:
+Ação: Finalizar
+1-Calcular e informar quantidade de números cadastrados.
+2-Separar e informar o maior numero cadastrado.
+3-Separar e informar o menor número cadastrado.
+4-Calcular a soma de todos os numeros cadastrados e informar o valor.
+5-Calcular a média dos números cadastrados

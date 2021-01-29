@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+
+<body>
+    <h1>Nacionalidade</h1>
+    Qual é o país de nacionalidade? <input type="text" name="nac" id="nac">
+    <input type="button" value="Verificar" onclick="definir()">
+    <div id="res"></div>
+    </div>
+    <div id="ret"></div>
+
+
+    <script>
+        function definir() {
+            var pais = window.document.querySelector('input#nac').value
+            Pais = pais.toUpperCase()
+            res1 = window.document.querySelector('div#res')
+            ret1 = window.document.querySelector('div#ret')
+            res1.innerHTML = `<p>O país mencionado foi ${Pais}</p>`
+            if (pais == 'Brasil' || pais == 'brasil') {
+                ret1.innerHTML = 'Então, você é <strong>brasileiro</strong>'
+            } else {
+                ret1.innerHTML = '<p>Então, você é <strong>estrangeiro</strong></p>'
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>

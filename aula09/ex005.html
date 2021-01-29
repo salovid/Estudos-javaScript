@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background: rgb(43, 96, 194);
+            font: normal 16pt Arial;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Iniciando estudos com DOM</h2>
+    <p>Aqui vai o resultado</p>
+    <p name=>Aprendendo a usar o
+        <strong>DOM</strong> em JavaScript</p>
+    <div id='msg'>Clique em mim</div>
+    <p name="msg1">Usando o nome</p>
+    <!---indice 0-->
+    <p name='msg1'>Usando de maneira certa!</p>
+    <!--indice 1-->
+    <div class="msg2">Clique em minha pessoa</div>
+    </br>
+    <script>
+        // usando Tag
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write('Esta escrito assim: ' + '"' + p1.innerHTML + '"' + '</br>')
+        p1.style.color = 'blue'
+
+        // usando id
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        window.document.getElementById('msg').innerHTML = ' I am waiting..'
+
+        // usando Nome
+        var d1 = window.document.getElementsByName('msg1')[1]
+        d1.style.color = 'yellow'
+
+        // usando Classe
+        var p2 = window.document.getElementsByClassName("msg2")[0]
+        window.document.write('</br>Is writing this way: ' + p2.innerText)
+        p2.style.background = 'blue'
+
+        // usando Seletor
+        var p3 = window.document.querySelector('div.msg2')
+        window.document.write('</br>' + p3.innerText + ' agora...')
+    </script>
+
+
+</body>
+
+</html>

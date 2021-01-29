@@ -1,0 +1,44 @@
+body {
+    background: rgb(42, 95, 241);
+    font: normal 16pt Arial;
+}
+
+header {
+    background: rgb(57, 113, 245);
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.705);
+}
+
+#adicionar {
+    font: regular Arial;
+    color: brown;
+    font-weight: 600;
+}
+
+#flista {
+    width: 200px;
+    background-color: rgb(250, 250, 250);
+}
+
+#res {
+    width: 400px;
+    background: whitesmoke;
+    font: normal 16px Calibri;
+    font-weight: 700;
+    color: rgb(128, 5, 70);
+}
+
+footer {
+    color: wheat;
+    text-align: center;
+    font-style: italic;
+}
